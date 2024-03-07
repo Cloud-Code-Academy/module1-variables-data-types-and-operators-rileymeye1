@@ -50,13 +50,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
-        if (a != null && b != null){
             return a - b;
-        }
-        else
-        {
-            return null;
-        }
     }
 
     /**
@@ -67,12 +61,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        if (a != null && b != null){
-            return a * b;
-        }
-        else {
-            return null;
-        }
+        return a * b;
     }
 
     /**
