@@ -39,6 +39,7 @@ public with sharing class VariablesDataTypesOperators {
         else
         {
             return null;
+            
         }
     }
 
