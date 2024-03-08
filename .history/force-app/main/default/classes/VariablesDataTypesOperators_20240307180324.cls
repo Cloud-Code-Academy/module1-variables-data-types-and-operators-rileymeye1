@@ -86,11 +86,12 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal division(Integer a, Integer b) {
         if (a != null && b != null) {
-            if (b != 0) {
-                return a / b;
-            }
-            else {
+            if (b = 0) {
                 return 0;
+            }
+            else
+            {
+                return a / b;   
             }
         }
         else {
