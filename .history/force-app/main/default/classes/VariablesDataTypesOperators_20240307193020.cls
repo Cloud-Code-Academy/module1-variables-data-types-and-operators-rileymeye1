@@ -336,7 +336,7 @@ public with sharing class VariablesDataTypesOperators {
         final Double DIVIDE_FACTOR = 9.0;
         Double celsius;
 
-        if (fahrenheit != null) {
+        if (fahrenheit!= null) {
             celsius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR / DIVIDE_FACTOR;
             return celsius;
         }
