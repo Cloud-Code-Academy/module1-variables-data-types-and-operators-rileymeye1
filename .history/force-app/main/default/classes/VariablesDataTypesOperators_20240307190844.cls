@@ -259,7 +259,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The average of the three numbers.
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
-        if (a != null && b != null && c != null) {
+        if (a != nul && b != null && c != null) {
             return (a + b + C) / 3;
         }
         else {
