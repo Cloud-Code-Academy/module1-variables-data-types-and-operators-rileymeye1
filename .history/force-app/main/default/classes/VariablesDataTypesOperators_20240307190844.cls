@@ -259,7 +259,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The average of the three numbers.
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
-        if (a != null && b != null && c != null) {
+        if (a != nul && b != null && c != null) {
             return (a + b + C) / 3;
         }
         else {
@@ -279,14 +279,10 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer adjustOrderOfOperations1(Integer a, Integer b, Integer c) {
         // Add parentheses around the addition operation so that it is performed before multiplication
-        Integer result = (a + b) * c;
+        Integer result = a + b * c;
 
-        if (result != null) {
-            return result;
-        }
-        else {
-            return null;
-        }
+        // Return the result
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -298,8 +294,8 @@ public with sharing class VariablesDataTypesOperators {
         // Add parentheses in the below expression to change the result.
         // The result of the expression as it is right now is 43. 
         // You should add parentheses so that the result of the expression becomes 8.
-        Integer answer = 48 - (15 + 5) * 2;
-        return answer; // Replace null with the variable you used to store the result
+        Integer answer = 48 - 15 + 5 * 2;
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -318,9 +314,9 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double complexOrderOfOperations(Integer a, Integer b, Integer c, Integer d, Integer e) {
         // Add parentheses around the multiplication and subtraction operations so that they are performed before division and addition
-        Double result = (a * b - c) / (Double) d + e;
+        Double result = a * b - c / (Double) d + e;
 
-        return result; // Replace null with the variable you used to store the result
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -334,15 +330,8 @@ public with sharing class VariablesDataTypesOperators {
         final Double SUBTRACT_FACTOR = 32.0;
         final Double MULTIPLY_FACTOR = 5.0;
         final Double DIVIDE_FACTOR = 9.0;
-        Double celsius;
-
-        if (fahrenheit != null) {
-            celsius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR / DIVIDE_FACTOR;
-            return celsius;
-        }
-        else {
-            return null;
-        }
+    
+        return null; // Replace null with the variable you used to store the result
     }
 
     
@@ -358,10 +347,11 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer performDivisionAndCast(Double a, Double b) {
         // Perform the division and cast (round down) off the result.
-        Double divisionResult = a / b;
+        Double divisionResult = null;
+
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = divisionResult.intValue();
-        return roundedResult; // Replace null with the variable you used to store the result
+        Integer roundedResult = null;
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -374,12 +364,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return A Decimal representing the weekly paycheck.
      */
     public static Decimal calculateWeeklyPaycheck(Decimal hourlyRate, Double numberOfHours) {
-        if (hourlyRate != null && numberOfHours != null) {
-            return hourlyRate * numberOfHours;
-        }
-        else {
-            return null;
-        }
+        // Calculate the weekly paycheck using the formula: rate multiplied by hours
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -393,16 +379,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return A Decimal representing the monthly paycheck.
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
-        Decimal weeklyPaycheck;
-
-        if (hourlyRate != null && numberOfHours != null) {
-            weeklyPaycheck = hourlyRate * numberOfHours;
-
-            return weeklyPaycheck * 4;
-        }
-        else {
-            return null;
-        }
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -416,11 +393,6 @@ public with sharing class VariablesDataTypesOperators {
      * @return The total cost after applying the sales tax.
      */
     public static Decimal calculateTotalCost(Decimal pricePerUnit, Integer numberOfUnits, Decimal salesTaxRate) {
-        if ( pricePerUnit != null && numberOfUnits != null && salesTaxRate != null) {
-            return (pricePerUnit * numberOfUnits) * (1 + salesTaxRate);
-        }
-        else {
-            return null;
-        }
+        return null; // Replace null with the variable you used to store the result
     }
 }
