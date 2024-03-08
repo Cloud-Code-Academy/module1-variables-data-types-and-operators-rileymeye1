@@ -360,7 +360,7 @@ public with sharing class VariablesDataTypesOperators {
         // Perform the division and cast (round down) off the result.
         Double divisionResult = a / b;
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = divisionResult.intValue();
+        Integer roundedResult = (Integer) divisionResult.round(System.RoundingMode.DOWN);
         return roundedResult; // Replace null with the variable you used to store the result
     }
 
