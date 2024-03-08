@@ -173,7 +173,8 @@ public with sharing class VariablesDataTypesOperators {
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
 		if (noun != null && verb != null && endingPunctuation != null) {
-            return 'The ' + noun + ' is ' + verb + endingPunctuation;
+            String sentence = 'The ' + noun + ' is ' + verb + endingPunctuation;;
+            retrun sentence;
 		}
         else {
             return null;
