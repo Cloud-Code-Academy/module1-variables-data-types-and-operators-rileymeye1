@@ -190,10 +190,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is in the past, False otherwise.
      */
     public static Boolean isDateInPast(Date dt) {
-        Date today = Date.today();
-        
         if (dt != null) {
-            if (dt < today) {
+            if (dt < date.today()) {
                 return true;
             }
             else {
@@ -262,7 +260,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
         if (a != null && b != null && c != null) {
-            return (a + b + c) / 3;
+            return (a + b + C) / 3;
         }
         else {
             return null;
@@ -360,10 +358,11 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer performDivisionAndCast(Double a, Double b) {
         // Perform the division and cast (round down) off the result.
-        Double divisionResult = a / b;
+        Double divisionResult = null;
+
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = Integer.valueOf(divisionResult);
-        return roundedResult; // Replace null with the variable you used to store the result
+        Integer roundedResult = null;
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -376,12 +375,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return A Decimal representing the weekly paycheck.
      */
     public static Decimal calculateWeeklyPaycheck(Decimal hourlyRate, Double numberOfHours) {
-        if (hourlyRate != null && numberOfHours != null) {
-            return hourlyRate * numberOfHours;
-        }
-        else {
-            return null;
-        }
+        // Calculate the weekly paycheck using the formula: rate multiplied by hours
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -395,17 +390,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return A Decimal representing the monthly paycheck.
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
-        Decimal weeklyPaycheck;
-        final Integer NUMBER_OF_WEEKLY_PAYCHECKS = 4;
-
-        if (hourlyRate != null && numberOfHours != null) {
-            weeklyPaycheck = hourlyRate * numberOfHours;
-
-            return weeklyPaycheck * NUMBER_OF_WEEKLY_PAYCHECKS;
-        }
-        else {
-            return null;
-        }
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -419,11 +404,6 @@ public with sharing class VariablesDataTypesOperators {
      * @return The total cost after applying the sales tax.
      */
     public static Decimal calculateTotalCost(Decimal pricePerUnit, Integer numberOfUnits, Decimal salesTaxRate) {
-        if ( pricePerUnit != null && numberOfUnits != null && salesTaxRate != null) {
-            return (pricePerUnit * numberOfUnits) * (1 + salesTaxRate);
-        }
-        else {
-            return null;
-        }
+        return null; // Replace null with the variable you used to store the result
     }
 }

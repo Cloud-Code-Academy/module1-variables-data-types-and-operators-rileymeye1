@@ -190,10 +190,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is in the past, False otherwise.
      */
     public static Boolean isDateInPast(Date dt) {
-        Date today = Date.today();
-        
         if (dt != null) {
-            if (dt < today) {
+            if (dt < date.today()) {
                 return true;
             }
             else {
@@ -262,7 +260,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
         if (a != null && b != null && c != null) {
-            return (a + b + c) / 3;
+            return (a + b + C) / 3;
         }
         else {
             return null;
@@ -362,7 +360,7 @@ public with sharing class VariablesDataTypesOperators {
         // Perform the division and cast (round down) off the result.
         Double divisionResult = a / b;
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = Integer.valueOf(divisionResult);
+        Integer roundedResult = divisionResult.intValue();
         return roundedResult; // Replace null with the variable you used to store the result
     }
 
@@ -396,12 +394,11 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         Decimal weeklyPaycheck;
-        final Integer NUMBER_OF_WEEKLY_PAYCHECKS = 4;
 
         if (hourlyRate != null && numberOfHours != null) {
             weeklyPaycheck = hourlyRate * numberOfHours;
 
-            return weeklyPaycheck * NUMBER_OF_WEEKLY_PAYCHECKS;
+            return weeklyPaycheck * 4;
         }
         else {
             return null;
@@ -419,11 +416,6 @@ public with sharing class VariablesDataTypesOperators {
      * @return The total cost after applying the sales tax.
      */
     public static Decimal calculateTotalCost(Decimal pricePerUnit, Integer numberOfUnits, Decimal salesTaxRate) {
-        if ( pricePerUnit != null && numberOfUnits != null && salesTaxRate != null) {
-            return (pricePerUnit * numberOfUnits) * (1 + salesTaxRate);
-        }
-        else {
-            return null;
-        }
+        return null; // Replace null with the variable you used to store the result
     }
 }

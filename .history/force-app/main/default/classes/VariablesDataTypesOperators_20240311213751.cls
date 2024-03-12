@@ -362,7 +362,7 @@ public with sharing class VariablesDataTypesOperators {
         // Perform the division and cast (round down) off the result.
         Double divisionResult = a / b;
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = Integer.valueOf(divisionResult);
+        Integer roundedResult = divisionResult.intValue();
         return roundedResult; // Replace null with the variable you used to store the result
     }
 
@@ -396,7 +396,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         Decimal weeklyPaycheck;
-        final Integer NUMBER_OF_WEEKLY_PAYCHECKS = 4;
+        Integer NUMBER_OF_WEEKLY_PAYCHECKS = 4;
 
         if (hourlyRate != null && numberOfHours != null) {
             weeklyPaycheck = hourlyRate * numberOfHours;
