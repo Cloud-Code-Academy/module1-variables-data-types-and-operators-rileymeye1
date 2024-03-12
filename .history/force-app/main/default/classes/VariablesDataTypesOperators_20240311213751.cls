@@ -396,7 +396,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         Decimal weeklyPaycheck;
-        final Integer NUMBER_OF_WEEKLY_PAYCHECKS = 4;
+        Integer NUMBER_OF_WEEKLY_PAYCHECKS = 4;
 
         if (hourlyRate != null && numberOfHours != null) {
             weeklyPaycheck = hourlyRate * numberOfHours;
